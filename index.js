@@ -17,7 +17,9 @@ function save() {
     for (const line of lines) {
         contents.push(line.val);
     }
+    document.querySelector("#name").value = document.querySelector("#name").value.trim();
     let name = document.querySelector("#name").value;
+    if (name==='') return;
     del();
     window.localStorage.setItem('saved_'+name, JSON.stringify(contents));
     updateSaved();

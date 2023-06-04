@@ -4,13 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-123337994-1');</script>
     <script src="mathjax-config.js"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async=""></script>
 
-    <meta property="og:url" content="https://williamhoza.com/textual-whiteboard">
+    <meta property="og:url" content="https://geofbot.github.io/textual-whiteboard/">
     <meta property="og:title" content="Textual Whiteboard">
-    <meta property="og:description" content="This is a simple tool to facilitate explaining things with equations. Share your screen with your audience using, e.g., Zoom. Type below and hit enter. Put TeX expressions between dollar signs...">
+    <meta property="og:description" content="This is a fork of William Hoza's simple tool to facilitate explaining things with equations. Share your screen with your audience using, e.g., Zoom. Type below and hit enter. Put TeX expressions between dollar signs...">
     <meta property="og:image" content="https://williamhoza.com/textual-whiteboard/fb.png">
     <meta property="og:image:width" content="1350">
     <meta property="og:image:height" content="709">
@@ -82,7 +81,7 @@
   <body>
     <div id="container">
       <p>
-        This is a simple tool to facilitate explaining things with equations.
+        This is a fork of William Hoza's <a href="https://williamhoza.com/textual-whiteboard/">Textual Whiteboard</a> for facilitating explaining things with equations. This fork adds basic save/load functionality.
       </p>
 
       <p>
@@ -107,7 +106,7 @@
 
         <div id="macrosDisplay">&nbsp;</div>
 
-        <div>Saved boards:</div>
+        <p>Saved boards:</p>
         <select id="saved" name="Saved" size="5" onchange="updateName()" onclick="updateName()">
 
         </select>
